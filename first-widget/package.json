@@ -1,0 +1,11 @@
+{
+    "name": "first-widget",
+    "version": "0.1.0",
+    "description": "Widget with config and index files only",
+    "dependencies": {
+        "grunt": "~0.4.2",
+        "grunt-contrib-clean": "~0.5.0",
+        "grunt-contrib-copy": "~0.5.0",
+        "grunt-contrib-compress": "~0.7.0"
+    }
+}
