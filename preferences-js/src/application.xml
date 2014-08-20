@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+    <ModulePrefs id="preferences-js"
+                 title="Examples. JS preferences."
+                 description="Example widget which uses preferences in javascript" >
+    </ModulePrefs>
+
+    <Metadata>
+        <Information>
+            <![CDATA[
+			Example widget which uses preferences in javascript
+		]]>
+        </Information>
+        <Categories>Examples</Categories>
+        <SupportedDimensions>MEDIUM</SupportedDimensions>
+    </Metadata>
+
+    <UserPref name="greeting"
+              display_name="Preferred greeting"
+              datatype="text"
+              default_value="Hello, World!" />
+
+    <!--This is group of colors -->
+    <!--START-->
+    <UserPref name="firstColor"
+              display_name="1st color"
+              datatype="color"
+              default_value="#4176a0"
+              group_name="colors">
+    </UserPref>
+    <UserPref name="secondColor"
+              display_name="2nd color"
+              datatype="color"
+              default_value="#FF9933"
+              group_name="colors">
+    </UserPref>
+    <!--END-->
+
+    <UserPref name="dayOfWeek" display_name="Day of week" datatype="enum" default_value="monday">
+        <EnumValue value="monday" display_value="Monday" />
+        <EnumValue value="tuesday" display_value="Tuesday" />
+        <EnumValue value="wednesday" display_value="Wednesday" />
+        <EnumValue value="thursday" display_value="Thursday" />
+        <EnumValue value="friday" display_value="Friday" />
+        <EnumValue value="saturday" display_value="Saturday" />
+        <EnumValue value="sunday" display_value="Sunday" />
+    </UserPref>
+    <UserPref name="choice"
+              display_name="To be or not to be"
+              datatype="bool"
+              default_value="true">
+    </UserPref>
+    <UserPref name="age"
+              display_name="Age"
+              datatype="integer"
+              default_value="20">
+    </UserPref>
+    <UserPref name="rate"
+              display_name="Rate"
+              datatype="float"
+              default_value="1.25">
+    </UserPref>
+
+    <!--No UI renders for hidden preferences-->
+    <UserPref name="secret"
+              datatype="hidden"
+              default_value="SECRET">
+    </UserPref>
+
+    <UserPref name="valueOfUnknownType"
+              default_value="value">
+    </UserPref>
+
+    <Content type="html" href="index.html">
+    </Content>
+</Module>
