@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+    <ModulePrefs id="preferences-js-formatting"
+                 title="Examples. Using formatting preferences."
+                 description="Example widget which uses formatting preferences"
+                 thumbnail="images/thumbnail.png">
+    </ModulePrefs>
+
+    <Metadata>
+        <Information>
+            <![CDATA[
+			Example widget which uses formatting preferences
+		]]>
+        </Information>
+        <Categories>Examples</Categories>
+        <SupportedDimensions>MEDIUM</SupportedDimensions>
+    </Metadata>
+
+    <!-- Users should add next global preferences definitions into application.xml
+    But users should be aware that preferences are only declared here.
+    The real values are taken from organization preferences.
+    The full list ov values for each preference you can see on the page with organization preferences. -->
+    <UserPref name="GLOBAL_TIME_FORMAT_MASK"
+              display_name="Time Format"
+              datatype="hidden"
+              default_value="HH:MM:SS" />
+    <UserPref name="GLOBAL_DATE_FORMAT_MASK"
+              display_name="Date Format"
+              datatype="hidden"
+              default_value="dd/mm/yyyy" />
+    <UserPref name="GLOBAL_TIME_ZONE"
+              display_name="Time Zone"
+              datatype="hidden"
+              default_value="-120" />
+    <UserPref name="GLOBAL_CONVERT_TIME_FORMAT"
+              display_name="Convert Time"
+              datatype="hidden"
+              default_value="CUSTOM" />
+    <UserPref name="GLOBAL_DISPLAY_TIME_ZONE"
+              display_name="Display Time Zone"
+              datatype="hidden"
+              default_value="HH:MM" />
+    <UserPref name="GLOBAL_NUMBER_FORMAT_GENERAL_DECIMAL_PLACES"
+              display_name="General Decimal Places"
+              datatype="hidden"
+              default_value="2" />
+    <UserPref name="GLOBAL_NUMBER_FORMAT_LARGE_NUMBER_DECIMAL_PLACES"
+              display_name="Large Number Decimal Places"
+              datatype="hidden"
+              default_value="0" />
+    <UserPref name="GLOBAL_NUMBER_FORMAT_SMALL_NUMBER_DECIMAL_PLACES"
+              display_name="Small Number Decimal Places"
+              datatype="hidden"
+              default_value="4" />
+    <UserPref name="GLOBAL_NUMBER_FORMAT_PERCENTAGE_DECIMAL_PLACES"
+              display_name="Percentage Decimal Places"
+              datatype="hidden"
+              default_value="2" />
+    <UserPref name="GLOBAL_NUMBER_FORMAT_RATIO_DECIMAL_PLACES"
+              display_name="Ratio Decimal Places"
+              datatype="hidden"
+              default_value="3" />
+    <UserPref name="GLOBAL_NUMBER_FORMAT_CURRENCY_DECIMAL_PLACES"
+              display_name="Currency Decimal Places"
+              datatype="hidden"
+              default_value="2" />
+    <UserPref name="GLOBAL_NUMBER_FORMAT_DECIMAL_SEPARATOR"
+              display_name="Decimal Separator"
+              datatype="hidden"
+              default_value="." />
+    <UserPref name="GLOBAL_NUMBER_FORMAT_GROUP_SEPARATOR"
+              display_name="Group Separator"
+              datatype="hidden"
+              default_value="'" />
+    <UserPref name="GLOBAL_NUMBER_FORMAT_NEGATIVE"
+              display_name="Negative Format"
+              datatype="hidden"
+              default_value="REGULAR" />
+    <UserPref name="GLOBAL_PREFERRED_SYMBOLOGY"
+              display_name="Preferred symbology"
+              datatype="hidden"
+              default_value="REGULAR" />
+    <UserPref name="GLOBAL_PREFERRED_COUNTRY"
+              display_name="Preferred country"
+              datatype="hidden"
+              default_value="AF" />
+    <UserPref name="GLOBAL_LANGUAGE_CODE"
+              display_name="Language"
+              datatype="hidden"
+              default_value="bg" />
+
+    <Content type="html" href="index.html">
+    </Content>
+</Module>

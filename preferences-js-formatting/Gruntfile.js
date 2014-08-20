@@ -3,6 +3,7 @@ module.exports = function (grunt) {
     grunt.initConfig({
         meta: {
             src: "src",
+            tests: "tests",
             out: ".out",
             widgetName: grunt.file.readJSON('package.json').name
         },
@@ -16,7 +17,8 @@ module.exports = function (grunt) {
             src: {
                 expand: true,
                 src: [
-                    'application.xml'
+                    'application.xml',
+                    'images/**/*.png'
                 ],
                 dest: '<%= meta.out %>/<%= meta.widgetName %>',
                 cwd: '<%= meta.src %>'
@@ -27,6 +29,7 @@ module.exports = function (grunt) {
             js: {
                 src: [
                     '<%= meta.src %>/js/dependencies/jquery/jquery.js',
+                    '<%= meta.src %>/js/dependencies/moment/moment.js',
                     '<%= meta.src %>/js/widget.js'
                 ],
                 dest: '<%= meta.out %>/<%= meta.widgetName %>/js/widget.concat.js'
@@ -63,5 +66,4 @@ module.exports = function (grunt) {
         'compress',
         'clean:afterbuild'
     ]);
-
 };

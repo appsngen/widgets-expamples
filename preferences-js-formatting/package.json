@@ -1,7 +1,7 @@
 {
-    "name": "preferences-js",
+    "name": "preferences-js-formatting",
     "version": "0.1.0",
-    "description": "Example widget which uses preferences in javascript",
+    "description": "Example widget which uses formatting preferences",
     "dependencies": {
         "grunt": "~0.4.2",
         "grunt-contrib-clean": "~0.5.0",
