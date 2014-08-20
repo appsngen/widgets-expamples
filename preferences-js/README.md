@@ -4,7 +4,6 @@ Setup dependencies with following commands:
 
 ```
 $ npm install
-$ grunt bower
 ```
 
 In order to build widget zip, run:
