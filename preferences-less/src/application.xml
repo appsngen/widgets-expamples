@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+    <ModulePrefs id="preferences-less"
+                 title="Examples. LESS preferences."
+                 description="Example widget which uses preferences in LESS" >
+    </ModulePrefs>
+
+    <Metadata>
+        <Information>
+            <![CDATA[
+			Example widget which uses preferences in LESS
+		]]>
+        </Information>
+        <Categories>Examples</Categories>
+        <SupportedDimensions>MEDIUM</SupportedDimensions>
+    </Metadata>
+
+    <Content type="html" href="index.html">
+    </Content>
+</Module>
