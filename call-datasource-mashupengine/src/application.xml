@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+    <ModulePrefs id="call-datasource-mashupengine"
+                 title="Examples. Call Mashup Engine datasource."
+                 description="Example widget which calls Mashup Engine datasource" >
+    </ModulePrefs>
+
+    <Metadata>
+        <Information>
+            <![CDATA[
+			Example widget which calls Mashup Engine datasource
+		]]>
+        </Information>
+        <DataSources>
+            <Source>epam_systems.mashupengine</Source>
+        </DataSources>
+        <Categories>Examples</Categories>
+        <SupportedDimensions>MEDIUM</SupportedDimensions>
+    </Metadata>
+
+    <UserPref name="filter"
+              display_name="Data filter"
+              datatype="text"
+              default_value="(Code eq 'EUROPE') and (MarketType eq 'Region') and (ChainType eq 'TopVolume') and (Limit eq 10)"
+              pref_type="input_parameter">
+    </UserPref>
+
+    <Content type="html" href="index.html">
+    </Content>
+</Module>
