@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+    <ModulePrefs id="events"
+                 title="Examples. Events."
+                 description="Example widget which uses events" >
+    </ModulePrefs>
+
+    <Metadata>
+        <Information>
+            <![CDATA[
+			Example widget which uses events
+		]]>
+        </Information>
+        <Events>
+            <Event>
+                <Name>SINGLE_INSTRUMENT</Name>
+                <Subscribe/>
+                <Publish/>
+                <Description>Single Instrument Channel</Description>
+                <Title>Single Instrument</Title>
+            </Event>
+        </Events>
+        <Categories>Examples</Categories>
+        <SupportedDimensions>MEDIUM</SupportedDimensions>
+    </Metadata>
+
+    <Content type="html" href="index.html">
+    </Content>
+</Module>
