@@ -3,7 +3,7 @@ module.exports = function (grunt) {
     grunt.initConfig({
         meta: {
             src: "src",
-            out: ".out",
+            out: "dist",
             widgetName: grunt.file.readJSON('package.json').name
         },
         /* cleans output folder  */
