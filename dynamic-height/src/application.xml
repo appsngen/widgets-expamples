@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+    <ModulePrefs id="dynamic-height"
+                 title="Examples. Dynamic height."
+                 description="Example widget which uses dynamic height" >
+    </ModulePrefs>
+
+    <Metadata>
+        <Information>
+            <![CDATA[
+			Example widget which uses dynamic height
+		]]>
+        </Information>
+        <Categories>Examples</Categories>
+        <SupportedDimensions>MEDIUM</SupportedDimensions>
+    </Metadata>
+
+    <Content type="html" href="index.html">
+    </Content>
+</Module>
