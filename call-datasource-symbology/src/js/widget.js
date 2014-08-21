@@ -11,23 +11,26 @@ appstore.ready(function () {
         var value = this.value;
         var inputSymbols = "MSFT";
         switch (value) {
-            case "Ticker":
-                inputSymbols = "MSFT|AAPL";
+            case "RIC":
+                inputSymbols = "MSFT.O|EPAM.N";
                 break;
-            case "Ilx":
+            case "TICKER":
+                inputSymbols = "XNYS:IBM|XNYS:EPAM|MSFT";
+                break;
+            case "ILX":
                 inputSymbols = "IBM-N,USD,NORM|ANDAU-M,USD,NORM";
                 break;
             case "ISIN":
                 inputSymbols = "US4592001014|US5949181045";
                 break;
-            case "RIC":
-                inputSymbols = "TIG.L|MSFT.O";
+            case "CUSIP":
+                inputSymbols = "594918104|29414B104";
                 break;
-            case "LipperId":
+            case "SEDOL":
+                inputSymbols = "0687209|B63H849";
+                break;
+            case "LIPPERID":
                 inputSymbols = "40000007|60074191";
-                break;
-            case "MICPlusTicker":
-                inputSymbols = "XNYS IBM|XNYS XOM";
                 break;
         }
 
@@ -45,6 +48,13 @@ appstore.ready(function () {
             symbols: symbols,
             resolveAmbiguity: true, // always "true" in current implementation can be false in future versions
             callback: function (result) {
+                $("#symbology").append($('<pre><code class="javascript" style="overflow: scroll;">' + JSON.stringify(result, undefined, 4) + '</code></pre>'));
+                $('pre code').each(function (i, e) { hljs.highlightBlock(e, '	') });
+                $("#update").attr("disabled", null);
+
+                appstore.adjustHeight();
+            },
+            errorCallback: function (error) {
                 $("#symbology").append($('<pre><code class="javascript" style="overflow: scroll;">' + JSON.stringify(result, undefined, 4) + '</code></pre>'));
                 $('pre code').each(function (i, e) { hljs.highlightBlock(e, '	') });
                 $("#update").attr("disabled", null);

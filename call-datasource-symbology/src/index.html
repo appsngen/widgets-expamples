@@ -15,24 +15,27 @@
     <div>
         <span>from</span>
         <select id="from">
-            <option value="Ticker" selected>Ticker</option>
-            <option value="Ilx">Ilx</option>
-            <option value="RIC">RIC</option>
-            <option value="MICPlusTicker">MICPlusTicker</option>
+            <option value="RIC" selected>RIC</option>
+            <option value="TICKER">TICKER</option>
+            <option value="ILX">ILX</option>
             <option value="ISIN">ISIN</option>
-            <option value="LipperId">LipperId</option>
+            <option value="CUSIP">CUSIP</option>
+            <option value="SEDOL">SEDOL</option>
+            <option value="LIPPERID">LIPPERID</option>
         </select>
         <span>to</span>
         <select id="to">
-            <option value="Ticker">Ticker</option>
-            <option value="Ilx">Ilx</option>
             <option value="RIC" selected>RIC</option>
+            <option value="TICKER">TICKER</option>
+            <option value="ILX">ILX</option>
             <option value="ISIN">ISIN</option>
-            <option value="LipperId">LipperId</option>
+            <option value="CUSIP">CUSIP</option>
+            <option value="SEDOL">SEDOL</option>
+            <option value="LIPPERID">LIPPERID</option>
         </select>
     </div>
     <div>
-        symbols: <input type="text" value="MSFT|AAPL" id="symbols" style=" width: 300px; "/> <br/>
+        symbols: <input type="text" value="MSFT.O" id="symbols" style=" width: 300px; "/> <br/>
     </div>
     <input type="button" value="update" id="update"/>
     <div>
