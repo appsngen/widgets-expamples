@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+    <ModulePrefs id="dynamic-scripts-loading"
+                 title="Examples. Dynamic scripts loading."
+                 description="Example widget which uses dynamic scripts loading" >
+    </ModulePrefs>
+
+    <Metadata>
+        <Information>
+            <![CDATA[
+			Example widget which uses dynamic scripts loading
+		]]>
+        </Information>
+        <Categories>Examples</Categories>
+        <SupportedDimensions>MEDIUM</SupportedDimensions>
+    </Metadata>
+
+    <Content type="html" href="index.html">
+    </Content>
+</Module>
