@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+    <ModulePrefs id="call-datasource"
+                 title="Examples. Call datasource."
+                 description="Example widget which calls datasource" >
+    </ModulePrefs>
+
+    <Metadata>
+        <Information>
+            <![CDATA[
+			Example widget which calls datasource
+		]]>
+        </Information>
+        <DataSources>
+            <Source>sample_org.data</Source>
+        </DataSources>
+        <Categories>Examples</Categories>
+        <SupportedDimensions>MEDIUM</SupportedDimensions>
+    </Metadata>
+
+    <UserPref name="symbol"
+              display_name="Symbol"
+              datatype="text"
+              default_value="IBM"
+              pref_type="input_parameter">
+    </UserPref>
+
+    <Content type="html" href="index.html">
+    </Content>
+</Module>
