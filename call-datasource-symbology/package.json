@@ -1,0 +1,13 @@
+{
+    "name": "call-datasource-symbology",
+    "version": "0.1.0",
+    "description": "Example widget which calls symbology datasource",
+    "dependencies": {
+        "grunt": "~0.4.2",
+        "grunt-contrib-clean": "~0.5.0",
+        "grunt-contrib-copy": "~0.5.0",
+        "grunt-contrib-concat": "~0.3.0",
+        "grunt-contrib-compress": "~0.7.0",
+        "grunt-htmlrefs": "~0.4.1"
+    }
+}

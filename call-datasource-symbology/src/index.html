@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- ref:js js/widget.concat.js -->
+    <script type="text/javascript" src="js/dependencies/jquery/jquery.js"></script>
+    <script type="text/javascript" src="js/dependencies/highlight/highlight.pack.js"></script>
+    <script type="text/javascript" src="js/widget.js"></script>
+    <!-- endref -->
+
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+</head>
+<body>
+<div>
+    <h1>Example widget which calls symbology datasource</h1>
+    <div>
+        <span>from</span>
+        <select id="from">
+            <option value="Ticker" selected>Ticker</option>
+            <option value="Ilx">Ilx</option>
+            <option value="RIC">RIC</option>
+            <option value="MICPlusTicker">MICPlusTicker</option>
+            <option value="ISIN">ISIN</option>
+            <option value="LipperId">LipperId</option>
+        </select>
+        <span>to</span>
+        <select id="to">
+            <option value="Ticker">Ticker</option>
+            <option value="Ilx">Ilx</option>
+            <option value="RIC" selected>RIC</option>
+            <option value="ISIN">ISIN</option>
+            <option value="LipperId">LipperId</option>
+        </select>
+    </div>
+    <div>
+        symbols: <input type="text" value="MSFT|AAPL" id="symbols" style=" width: 300px; "/> <br/>
+    </div>
+    <input type="button" value="update" id="update"/>
+    <div>
+        <h3>Symbology resolution result:</h3>
+        <div id="symbology">
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

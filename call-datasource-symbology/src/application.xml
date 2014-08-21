@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+    <ModulePrefs id="call-datasource-symbology"
+                 title="Examples. Call symbology datasource."
+                 description="Example widget which calls symbology datasource" >
+    </ModulePrefs>
+
+    <Metadata>
+        <Information>
+            <![CDATA[
+			Example widget which calls symbology datasource
+		]]>
+        </Information>
+        <DataSources>
+            <Source>tr.symbology</Source>
+        </DataSources>
+        <Categories>Examples</Categories>
+        <SupportedDimensions>MEDIUM</SupportedDimensions>
+    </Metadata>
+
+    <UserPref name="preferredExchange" display_name="Preferred Exchange" datatype="text" default_value="NSQ" />
+    <UserPref name="GLOBAL_PREFERRED_COUNTRY" display_name="Preferred Country" datatype="hidden" default_value="US" />
+
+    <Content type="html" href="index.html">
+    </Content>
+</Module>
