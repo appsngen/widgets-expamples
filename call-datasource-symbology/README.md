@@ -1,5 +1,7 @@
 # Widget which calls symbology datasource
 
+You need to have subscription to `symbology` datasource
+
 Setup dependencies with following commands:
 
 ```

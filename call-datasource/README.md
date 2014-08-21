@@ -1,5 +1,7 @@
 # Widget which calls datasource
 
+You need to have subscription to `sample_org.data` datasource
+
 Setup dependencies with following commands:
 
 ```
